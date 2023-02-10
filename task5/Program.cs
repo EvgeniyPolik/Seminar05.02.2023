@@ -1,12 +1,12 @@
 ﻿using System.Text;
 
-int GetIntFromConsole(string message)
+int GetIntFromConsole(string message) 
 {
     Console.WriteLine(message);
     return int.Parse(Console.ReadLine() ?? "");
 }
 
-IEnumerable<int[]> GetLine(int n)
+IEnumerable<int[]> GetLine(int n)  // Ленивая колекция для генерации строк
 {
     if (n % 2 == 0)
         n++;
@@ -30,7 +30,7 @@ IEnumerable<int[]> GetLine(int n)
     }
 }
 
-void printLine(int[] line)
+void printLine(int[] line)  // Печать линии
     {
         int len = line.Length;
         StringBuilder lineString = new StringBuilder();

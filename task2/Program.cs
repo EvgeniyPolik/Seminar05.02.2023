@@ -54,17 +54,17 @@ class Matrix
 
     public override string ToString()
     {
-        var outStringBulidel = new StringBuilder();
+        var outStringBuildel = new StringBuilder();
         for (int i = 0; i < this.GetLength(0); i++)
         {
             for (int j = 0; j < this.GetLength(1); j++)
             {
-                outStringBulidel.Append(this[i, j]);
-                outStringBulidel.Append("\t");
+                outStringBuildel.Append(this[i, j]);
+                outStringBuildel.Append("\t");
             }
-            outStringBulidel.Append("\n");
+            outStringBuildel.Append("\n");
         }
-        return outStringBulidel.ToString();
+        return outStringBuildel.ToString();
     }
     public static Matrix operator *(Matrix matrixA, Matrix matrixB)
     {
